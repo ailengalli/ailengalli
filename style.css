@@ -7,24 +7,24 @@ body{
     color: #212020;
 }
 h1 {
-    color: gainsboro;
+    color: #dcdcdc;
     font-size: 15em;
     font-family: "antonio", sans-serif;
     font-style: bold;
 }
 article {
     color: gainsboro;
-    font-size: 12em;
+    font-size: 2em;
     font-family: "montserrat";
 }
 h2 {
     color: gainsboro;
-    font-size: 12em;
+    font-size: 2em;
     font-family: "montserrat", bold;
 }
 
 .botonera {
-    font-size: 15px;
+    font-size: 2em;
     display:flex;
     flex-direction: column;
     justify-content: space-between;

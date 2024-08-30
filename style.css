@@ -23,7 +23,7 @@ h2 {
     font-family: "montserrat", bold;
 }
 
-.botones {
+.botonera {
     font-size: 15px;
     display:flex;
     flex-direction: column;

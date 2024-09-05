@@ -5,4 +5,6 @@ Si tienen alguna sugerencia de cual es la etiqueta ayudaría. Intente poner las 
 adjunto el prototipo en figma
 https://www.figma.com/design/oj2AHbUsebhStDhgjQp3Z5/Untitled?node-id=0-1&t=ORsWF0s5RORHatMS-1
 
+También me pasa que ahora lo vi en otro monitor y se desconfiguraron los tamaños y la posición de los elementos. ¿Qué tendría que corregir para que no me pase eso? ¿Es porque puse el padding en pixeles? 
+
 Muchas gracias

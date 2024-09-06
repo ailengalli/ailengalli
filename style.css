@@ -11,15 +11,17 @@
 
 body {
     background-color: #eaeaea;
-    padding: 0px;
+    padding: 0px; /*Como ya pones en el selector universal un padding de 0, acá no es necesario*/
 }
 
+
+/*En este h1 están pasando varias cosas, primero tenés varias propiedades que no te están modificando nada. Tendrías que fijarte cuáles sirven y cuáles no, y qué hace cada una. Entiendo que ese margin lo estás usando porque el align-items no te estaba funcionando. La razón por la que no funcionaba como querés es porque usaste flex-direction: row. Align-items organiza los elementos en el eje contrario del que están predispuestos. Es decir, si tenés los elementos en columna (eje vertical), align-items los alinea en un eje horizontal.*/
 h1 {
     align-items: flex-end;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
-    margin-left: 1000px;
+    margin-left: 1000px; /*Este margin es muy grande. Como referencia, los margins y paddings sólo suelen llegar hasta 100px. Si son mas grandes, suele significar que hay otras formas de solucionarlo*/
     color: #ffffff;
     font-size: 51px;
     font-family: "Inter", sans-serif;
@@ -98,7 +100,7 @@ ul li {
     align-items: center;
     justify-content: space-around;
     display: flex;
-    padding: 330px;
+    padding: 330px; /*Al usar un padding tan grande para darle un alto al elemento, las propiedades de flex no están modificando nada. Deberías probar poniendo un height, y no un padding.*/
     color: #000000;
     text-align: center;
     font-size: 51px;

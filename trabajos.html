@@ -16,17 +16,6 @@
                 <div class="iconobotonera">
                     <a href="index.html" target="_self"><img src="img/star.png" width="40px" height="40px"
                             alt="vuelta a home" /></a>
-                            <script>
-                                function cambiarDisplay(visibilidadNueva){
-                                    document.getElementById("galeria").style.display = visibilidadNueva
-                                }
-                                function mostrarGaleria(){
-                                    cambiarDisplay('flex')
-                                }
-                                function ocultarGaleria(){
-                                    cambiarDisplay('none')
-                                }
-                            </script>
                 </div>
                 <a href="#trabajos">TRABAJOS</a>
                 <a href="contacto.html">CONTACTO</a>
@@ -39,49 +28,14 @@
             <section class="galeriatrabajos">
                 <article class="trabajos">
                     <h3>Serie Viajes</h3>
-                </article>
-                <section class="viajetrabajo">
-                        <div class="galeria" id="miniaturas">
-                            <a href="#foto1"><img src="img/img01.png" width="600px" alt="fotografía de viaje a Balcarce" onClick="mostrarGaleria()"></a>
-                            <a href="#foto2"><img src="img/img02.png" width="600px" alt="fotografía de viaje a Balcarce" onClick="mostrarGaleria()"></a>
-                            <a href="#foto3"><img src="img/img03.png" width="600px" alt="fotografía de viaje a Balcarce" onClick="mostrarGaleria()"></a>
-                            <a href="#foto3"><img src="img/img03.png" width="600px" alt="fotografía de viaje a Balcarce" onClick="mostrarGaleria()"></a>
-                        </div>
-                </section>
-                <section id="galeria">
-                    <div id="fondo-galeria"></div>
-                    <ul id="galeria-oculta">
-                            <li class="fraccion-galeria" id="foto-1">
-                                    <a href="#" class="primer-ultima-flecha"><img src="img/arrow-left-circle.svg" width="50px" height="50px" alt="Anterior" class="anterior"></a>
-                                    <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                    <a href="#foto-2"><img src="img/arrow-rightcircle.svg" width="50px" height="50px" alt="Siguiente"></a>
-                            </li>
-                            <li class="fraccion-galeria" id="foto-2">
-                                    <a href="#foto-1"><img src="img/arrow-left-circle.svg" width="50px" height="50px" alt="Anterior"></a>
-                                    <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                    <a href="#foto-3"><img src="img/arrow-rightcircle.svg" width="50px" height="50px" alt="Siguiente"></a>
-                            </li>
-                            <li class="fraccion-galeria" id="foto-3">
-                                    <a href="#foto-2"><img src="img/arrow-left-circle.svg" width="50px" height="50px" alt="Anterior"></a>
-                                    <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                    <a href="#" class="primer-ultima-flecha"><img src="img/arrow-rightcircle.svg" width="50px" height="50px" alt="Siguiente"></a>
-                            </li>
-                            <li class="fraccion-galeria-picoteo" id="foto-4">
-                                <a href="#" class="primer-ultima-flecha"><img src="img/arrow-left-circle.svg" width="50px" height="50px" alt="Anterior" class="anterior"></a>
-                                <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                <a href="#foto-5"><img src="img/arrow-rightcircle.svg" width="50px" height="50px" alt="Siguiente"></a>
-                            </li>
-                            <li class="fraccion-galeria-picoteo" id="foto-5">
-                                <a href="#foto-4"><img src="img/arrow-left-circle.svg" width="50px" height="50px" alt="Anterior"></a>
-                                <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                <a href="#foto-6"><img src="img/arrow-rightcircle.svg" width="50px" height="50px" alt="Siguiente"></a>
-                            </li>
-                            <li class="fraccion-galeria-picoteo" id="foto-6">
-                                <a href="#foto-5"><img src="img/arrow-left-circle.svg" width="50px" height="50px" alt="Anterior"></a>
-                                <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
-                                <a href="#" class="primer-ultima-flecha"><img src="img/arrow-rightcircle.svg" width="50px" height="50px" alt="Siguiente"></a>
-                            </li>
-                        </ul>
+                    <div class="carrusel">
+                    <div class="elemento"><img src="/img/img01.png" alt="fotografía analógica en Balcarce"></div>
+                    <div class="elemento"><img src="/img/img02.png" alt="fotografía analógica en Balcarce"></div>
+                    <div class="elemento"><img src="/img/img03.png" alt="fotografía analógica en Balcarce"></div>
+                    <div class="elemento"><img src="/img/img04.png" alt="fotografía analógica en Balcarce"></div>
+                    <div class="elemento"><img src="/img/img05.png" alt="fotografía analógica en Balcarce"></div>
+                    <div class="elemento"><img src="/img/img06.png" alt="fotografía analógica en Balcarce"></div>
+                        
                 </section>
         </main>
 </div>

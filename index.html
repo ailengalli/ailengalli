@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Ailen Galli</title>
-    <link href="style.css" rel="stylesheet" types="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/star.png" alt="faviconailengalli">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -14,47 +15,52 @@
         <div class="encabezado">
             <h1>AILÉN GALLI</h1>
         </div>
-        <img src="img/fotoperfill.jpg" class="perfil-img">
+        <img src="img/fotoperfil.jpg" class="perfil-img" alt="Foto de perfil de Ailén Galli">
 
         <nav class="navegador">
             <div class="iconobotonera">
-                <a href="index.html" target="_self"><img src="img/star.png"  width="40px" height="40px" alt="vuelta a home"/></a>
+                <a href="index.html" target="_self">
+                    <img src="img/star.png" class="img-star" alt="Vuelta a home" />
+                </a>
             </div>
-            <a href="#trabajos">TRABAJOS</a>
+            <a href="trabajos.html">TRABAJOS</a>
             <a href="contacto.html">CONTACTO</a>
             <a href="#redessociales">REDES SOCIALES</a>
         </nav>
 
-        <div class="emergente">
-            <p>Directora de arte, fotógrafa
-                y diseñadora gráfica.</p>
-        </div>
-
     </header>
     <main>
+
+        <div class="emergente animate__fadeInDown" >
+            <p>Directora de arte, fotógrafa y diseñadora gráfica.</p>
+        </div>
+
         <section class="trabajos" id="trabajos">
             <div class="cards">
                 <article class="card2">
                     <h3>DIRECCIÓN DE ARTE</h3>
-                   <img src="img/direciondearte.jpg" class="trabajo-img"> 
+                    <img src="img/direciondearte.jpg" class="trabajo-img"
+                        alt="Imagen representativa de dirección de arte">
                     <h4>Gestión y realización de la estética global de productos audiovisuales. Creación de conceptos
                         visuales.</h4>
                 </article>
                 <article class="card2">
                     <h3>FOTOGRAFÍA</h3>
-                     <a href="trabajos.html"> <img src="img/fotoanalogica.jpg" class="trabajo-img"> </a>
-                    <h4>Fotografía profesional con maquina de rollo fotográfico y procesos experimentales.</h4>
+                    <a href="trabajos.html">
+                        <img src="img/fotoanalogica.jpg" class="trabajo-img" alt="Fotografía analógica de ejemplo">
+                    </a>
+                    <h4>Fotografía profesional con máquina de rollo fotográfico y procesos experimentales.</h4>
                 </article>
                 <article class="card2">
                     <h3>DISEÑO GRÁFICO</h3>
-                    <img src="img/disenografico.jpg" class="trabajo-img">
+                    <img src="img/disenografico.jpg" class="trabajo-img" alt="Imagen representativa de diseño gráfico">
                     <h4>Creación de piezas visuales para redes sociales. Branding. Diseño editorial. Ilustración y
                         pintura.</h4>
                 </article>
             </div>
         </section>
         <section class="contacto" id="contacto">
-            <img src="img/recurso1.png" class="contacto-img">
+            <img src="img/recurso1.png" class="contacto-img" alt="Recurso gráfico de contacto">
             <div class="contacto-container">
                 <p>¿Trabajamos juntxs?</p>
                 <p>¡Contame tus ideas y propuestas!</p>
@@ -66,10 +72,12 @@
     </main>
     <footer>
         <div class="social" id="redessociales">
-            <a href="https://www.behance.net/ailenngalli" target="_blank"> <img src="img/behance.png"
-                    class="social-icon"></a>
-            <a href="https://www.instagram.com/ailengalli/" target="_blank"> <img src="img/instagram.png"
-                    class="social-icon"></a>
+            <a href="https://www.behance.net/ailenngalli" target="_blank">
+                <img src="img/behance.png" class="social-icon" alt="Ícono de Behance">
+            </a>
+            <a href="https://www.instagram.com/ailengalli/" target="_blank">
+                <img src="img/instagram.png" class="social-icon" alt="Ícono de Instagram">
+            </a>
         </div>
         <p>Todos los derechos reservados. Copyright © 2024 Ailén Galli</p>
     </footer>

@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    align-items: center;  
+    align-items: center;
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
@@ -23,10 +23,6 @@ h1 {
     font-size: 51px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    list-style: none;
-    font-optical-sizing: auto;
-    font-style: normal;
     margin-right: 16px;
 }
 
@@ -34,8 +30,6 @@ article {
     color: gainsboro;
     font-size: 30px;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 h2 {
@@ -43,10 +37,6 @@ h2 {
     font-size: 30px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    list-style: none;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 .encabezado {
@@ -56,7 +46,6 @@ h2 {
 
 .perfil-img {
     width: 100%;
-    height: 100%;
 }
 
 nav {
@@ -68,9 +57,9 @@ nav {
     font-style: bold;
 }
 
-ul li {
-    display: inline-block;
-    padding: 0px 350px;
+nav a:hover {
+    color: #3498db;
+    text-decoration: underline;
 }
 
 .navegador {
@@ -84,7 +73,7 @@ ul li {
 }
 
 .navegador a {
-color: #131313;
+    color: #131313;
     font-family: "Inter", sans-serif;
     font-size: 36px;
     transition: 0.2s;
@@ -109,18 +98,12 @@ color: #131313;
     text-align: center;
     font-size: 51px;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 p {
     color: #080808;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    list-style: none;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 h3 {
@@ -132,10 +115,6 @@ h3 {
     width: 390px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    list-style: none;
-    font-optical-sizing: auto;
-    font-style: normal;
     border-radius: 600px;
     border-style: solid;
     margin: 21px;
@@ -148,19 +127,8 @@ h4 {
     font-weight: 400;
     text-align: left;
     font-size: 27px;
-    font-style: normal;
-    list-style: none;
-    font-optical-sizing: auto;
-    font-style: normal;
     width: 400px;
     margin: 16px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards {
@@ -207,6 +175,10 @@ main {
 #contacto {
     color: #080808;
     margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    justify-content: center;
 }
 
 #contacto h4 {
@@ -223,6 +195,17 @@ main {
     width: auto;
     height: auto;
     margin-bottom: 16px;
+}
+
+.contacto-container {
+    margin-left: 3rem;
+}
+
+.contacto-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -255,105 +238,120 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.contactoo{ background-color: #303030;
+.contactoo {
+    background-color: #303030;
     padding: 0px;
 
 }
+
 form {
-	margin-top: 30px;
-	height: fit-content;
-	display: flex;
-	align-items: flex-start;
-	gap: 40px;
-	flex-wrap: wrap;
+    margin-top: 30px;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 label {
-	color: #feffff;
-	font-family: "Inter", sans-serif;
+    color: #feffff;
+    font-family: "Inter", sans-serif;
     font-size: 21px;
-	letter-spacing: 0.4px;
-	padding-bottom: 7px;
+    letter-spacing: 0.4px;
+    padding-bottom: 7px;
 }
 
 form div {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
-	color: rgb(48, 48, 48);
-	width: 520px;
-	height: 30px;
-	padding: 10px 25px;
-	border-radius: 10px;
-	background: #B5B5B5;
-	border: none; 
-    margin-bottom: 20px;  
+    color: rgb(48, 48, 48);
+    width: 520px;
+    height: 30px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background: #B5B5B5;
+    border: none;
+    margin-bottom: 20px;
 }
 
 input::placeholder {
-	color: rgb(253, 253, 253);
-	font-size: 1em;
+    color: rgb(253, 253, 253);
+    font-size: 1em;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #3498db;
+    background-color: #f0f8ff;
 }
 
 textarea {
-	width: 520px;
-	height: 300px;
-	padding: 10px 25px;
-	border-radius: 10px;
-	background: #B5B5B5;
+    width: 520px;
+    height: 300px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background: #B5B5B5;
     border-radius: 3px;
     padding: 15px;
-    border: 2px solid transparent;;
+    border: 2px solid transparent;
+    ;
 }
- 
+
 .boton {
-	width: 100px;
-	height: 40px;
-	font-size: 1em;
-	font-weight: 600;
-	background: #ffffff;
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    background: #ffffff;
 }
 
 .boton:hover {
-	width: 100px;
-	height: 40px;
-	background: #dfdfdf;
-	color: #555555;
-	transition: 0.2s;
+    width: 100px;
+    height: 40px;
+    background: #dfdfdf;
+    color: #555555;
+    transition: 0.2s;
 }
 
 .intereses {
-	flex-flow: row wrap;
-	gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .subtitulo-intereses {
-	color: azure;
-	font-size: 1.125em;
-	font-weight: 600;
-	letter-spacing: 0.4px;
-	padding-top: 30px;
+    color: azure;
+    font-size: 1.125em;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding-top: 30px;
 }
 
 .intereses input {
-	width: 20px;
-	align-items: center;
+    width: 20px;
+    align-items: center;
 }
 
 .checkbox {
-	font-size: 1.125em;
-	font-weight: 200;
-	display: flex;
-	gap: 5px;
-	padding-top: 5px;
+    font-size: 1.125em;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    
+    input {
+        margin-bottom: 0px;
+        margin-left: 0.5rem;
+    }
 }
 
 .botones-form {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 h5 {
@@ -365,30 +363,140 @@ h5 {
     width: 390px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    list-style: none;
-    font-optical-sizing: auto;
-    font-style: normal;
     border-radius: 600px;
     border-style: solid;
     margin: 21px;
     user-select: none;
 }
 
+.title-trabajos {
+    margin-top: 3rem;
+}
+
+.carrusel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .carrusel {
-	margin-top: 30%;
-	display: flex;
-	flex-wrap: nowrap;
-	overflow:scroll;
-	}
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
 .elemento {
-	flex: 1 0 auto;
-	margin: 0 50px;
-	background-color: #dfdfdf;
-	width: 600px;
-	heigth: 400px;
-	}
-.elemento img{
-	width: 600px;
-	heigth: 400px;
-	}
+    flex: 1 0 auto;
+    margin: 0 20px;
+    width: 600px;
+    height: 400px;
+}
+
+.elemento img {
+    width: 100%;
+    height: 100%;
+}
+
+button.prev {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-left: 0.6rem;
+}
+
+button.next {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.flecha {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil-img {
+        width: 100px;
+    }
+}
+
+.emergente {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.iconobotonera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconobotonera a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.iconobotonera a:hover {
+    border: 2px solid #131313;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.img-star {
+    width: 3rem;
+    height: 3rem;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -10,7 +10,7 @@ La idea principal fue adoptar un enfoque minimalista, utilizando una paleta de *
 
 ### Boceto Inicial
 
-Aquí te dejo el primer boceto del diseño, realizado en Figma. Aún es un trabajo en progreso, pero refleja el estilo y la dirección general del proyecto.
+Aquí te dejo el boceto del diseño, realizado en Figma. Aún es un trabajo en progreso, pero refleja el estilo y la dirección general del proyecto. Tuve complicaciones en la creación de los componentes, en general prefiero trabajar directo en el código que realizar el prototipado en Figma.
 
-[Ver Boceto en Figma](https://www.figma.com/design/oj2AHbUsebhStDhgjQp3Z5/Untitled?node-id=0-1&t=ORsWF0s5RORHatMS-1)
+[Ver Boceto en Figma](https://www.figma.com/design/oj2AHbUsebhStDhgjQp3Z5/TP---Ailen-Galli?node-id=46-2&t=uLHxoq8jU90BpztN-1)
 

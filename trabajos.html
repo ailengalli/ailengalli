@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Ailen Galli</title>
-    <link href="style.css" rel="stylesheet" types="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/star.png" alt="faviconailengalli">
 </head>
 <div class="trabajosgaleria">
@@ -14,10 +14,9 @@
 
             <nav class="navegador">
                 <div class="iconobotonera">
-                    <a href="index.html" target="_self"><img src="img/star.png" width="40px" height="40px"
-                            alt="vuelta a home" /></a>
+                    <a href="index.html" target="_self"><img src="img/star.png" class="img-star" alt="Vuelta a home" /></a>
                 </div>
-                <a href="#trabajos">TRABAJOS</a>
+                <a href="trabajos.html">TRABAJOS</a>
                 <a href="contacto.html">CONTACTO</a>
                 <a href="#redessociales">REDES SOCIALES</a>
             </nav>
@@ -27,27 +26,42 @@
         <main>
             <section class="galeriatrabajos">
                 <article class="trabajos">
-                    <h3>Serie Viajes</h3>
-                    <div class="carrusel">
-                    <div class="elemento"><img src="/img/img01.png" alt="fotografía analógica en Balcarce"></div>
-                    <div class="elemento"><img src="/img/img02.png" alt="fotografía analógica en Balcarce"></div>
-                    <div class="elemento"><img src="/img/img03.png" alt="fotografía analógica en Balcarce"></div>
-                    <div class="elemento"><img src="/img/img04.png" alt="fotografía analógica en Balcarce"></div>
-                    <div class="elemento"><img src="/img/img05.png" alt="fotografía analógica en Balcarce"></div>
-                    <div class="elemento"><img src="/img/img06.png" alt="fotografía analógica en Balcarce"></div>
+                    <h3 class="title-trabajos">Serie Viajes</h3>
+                    <div class="carrusel-container">
+                        <button class="prev" onclick="scrollCarruselLeft()">
+                            <img src="img/flechaizq.svg" alt="Flecha Izquierda" class="flecha">
+                        </button>
                         
-                </section>
-        </main>
+                        <div class="carrusel">
+                            <div class="elemento"><img src="img/img01.png" alt="Fotografía analógica en Balcarce, imagen 1"></div>
+                            <div class="elemento"><img src="img/img02.png" alt="Fotografía analógica en Balcarce, imagen 2"></div>
+                            <div class="elemento"><img src="img/img03.png" alt="Fotografía analógica en Balcarce, imagen 3"></div>
+                            <div class="elemento"><img src="img/img04.png" alt="Fotografía analógica en Balcarce, imagen 4"></div>
+                            <div class="elemento"><img src="img/img05.png" alt="Fotografía analógica en Balcarce, imagen 5"></div>
+                            <div class="elemento"><img src="img/img06.png" alt="Fotografía analógica en Balcarce, imagen 6"></div>
+                        </div>
+
+                        <button class="next" onclick="scrollCarruselRight()">
+                            <img src="img/felchader.svg" alt="Flecha Derecha" class="flecha">
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </main>        
+        
 </div>
 <footer>
     <div class="social" id="redessociales">
-        <a href="https://www.behance.net/ailenngalli" target="_blank"> <img src="img/behance.png"
-                class="social-icon"></a>
-        <a href="https://www.instagram.com/ailengalli/" target="_blank"> <img src="img/instagram.png"
-                class="social-icon"></a>
+        <a href="https://www.behance.net/ailenngalli" target="_blank">
+            <img src="img/behance.png" class="social-icon" alt="Ícono de Behance">
+        </a>
+        <a href="https://www.instagram.com/ailengalli/" target="_blank">
+            <img src="img/instagram.png" class="social-icon" alt="Ícono de Instagram">
+        </a>
     </div>
     <p>Todos los derechos reservados. Copyright © 2024 Ailén Galli</p>
 </footer>
-</body>
 
+<script src="script/galeria.js"></script>
+</body>
 </html>

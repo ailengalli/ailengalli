@@ -59,7 +59,7 @@ nav {
 
 nav a:hover {
     color: #3498db;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .navegador {

@@ -375,115 +375,20 @@ h5 {
     user-select: none;
 }
 
-<!--revisar-->
-
-.estrelladivproyectos{
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-}
-.proyectos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.proyectos h4{
-    font-family:"DM Mono", monospace;
-    font-size: 40px;
-    color: #020202;
-    padding: 20px;
-}
-.proyectos p{
-    font-family:"DM Mono", monospace;
-    font-size: 20px;
-    color: #00000095;
-    padding: 20px;
-}
-.galeria {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-.g-proyectos img, .g-proyectos-picoteo img{
-    border-radius: 40px;
-    margin: 20px 12px;
-    border: 1px solid rgb(27, 27, 27);
-    box-shadow: 0 0 5px #00000069;
-    padding: 20px;
-}
-.g-proyectos img:hover {
-    transform: scale(1.1);
-}
-.g-proyectos-picoteo img:hover{
-    transform: scale(1.1);
-}
-/* galeria */
-#galeria, #galeriapicoteo{
-    display: none;
-    width: 100%;
-    justify-content: center;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    background-color: #00000051;
-}
-/*galeria oculta*/
-#galeria-oculta, #galeria-ocultapicoteo {
-    width: 60%;
-    max-width: 1200px;
-    overflow: hidden;
-    z-index: 20;
-}
-.fraccion-galeria, .fraccion-galeria-picoteo{
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 100vh;
-    justify-content: space-around;
-}
-.fraccion-galeria img, .fraccion-galeria-picoteo img {
-    transition: filter 0.4s ease, transform 0.5s ease;
-    cursor: pointer;
-}
-.fraccion-galeria a:first-child {
-    margin-right: 420px;/*margen de flecha*/
-}
-.fraccion-galeria a:last-child {
-    margin-left: 420px;/*margen de flecha*/
-}
-.fraccion-galeria-picoteo a:first-child {
-    margin-right: 420px;/*margen de flecha*/
-}
-.fraccion-galeria-picoteo a:last-child {
-    margin-left: 420px;/*margen de flecha*/
-}
-.close {
-    position: absolute;
-    top: 10px;
-    right: 2%;
-}
-.primer-ultima-flecha {
-    visibility: hidden;
-}
-/* imágenes galeria oculta */
-#foto-1 {
-    background-image: url("img/mockupbarroalfareria_atamaño.png");
-}
-#foto-2 {
-    background-image: url("img/mockuptaller_atamaño.png");
-}
-#foto-3 {
-    background-image: url("img/mockuptotebag_atamaño.png");
-}
-#foto-4 {
-    background-image: url("img/mockupafiche_atamaño.png");
-}
-#foto-5 {
-    background-image: url("img/postalmockup2_atamaño.png"); 
-}
-#foto-6 {
-    background-image: url("img/mockupbuzo_atamaño.png");
-}
+.carrusel {
+	margin-top: 30%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow:scroll;
+	}
+.elemento {
+	flex: 1 0 auto;
+	margin: 0 50px;
+	background-color: #dfdfdf;
+	width: 600px;
+	heigth: 400px;
+	}
+.elemento img{
+	width: 600px;
+	heigth: 400px;
+	}

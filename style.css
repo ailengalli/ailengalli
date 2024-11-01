@@ -60,6 +60,7 @@ h2 {
 }
 
 nav {
+    background-color: #eaeaea;
     border-color: #131313;
     font-size: 30px;
     font-family: "Inter", sans-serif;
@@ -83,7 +84,7 @@ ul li {
 }
 
 .navegador a {
-    color: #131313;
+color: #131313;
     font-family: "Inter", sans-serif;
     font-size: 36px;
     transition: 0.2s;
@@ -252,4 +253,237 @@ footer {
     width: 100px;
     height: 100px;
     transition: transform 0.3s ease;
+}
+
+.contactoo{ background-color: #303030;
+    padding: 0px;
+
+}
+form {
+	margin-top: 30px;
+	height: fit-content;
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+label {
+	color: #feffff;
+	font-family: "Inter", sans-serif;
+    font-size: 21px;
+	letter-spacing: 0.4px;
+	padding-bottom: 7px;
+}
+
+form div {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	color: rgb(48, 48, 48);
+	width: 520px;
+	height: 30px;
+	padding: 10px 25px;
+	border-radius: 10px;
+	background: #B5B5B5;
+	border: none; 
+    margin-bottom: 20px;  
+}
+
+input::placeholder {
+	color: rgb(253, 253, 253);
+	font-size: 1em;
+}
+
+textarea {
+	width: 520px;
+	height: 300px;
+	padding: 10px 25px;
+	border-radius: 10px;
+	background: #B5B5B5;
+    border-radius: 3px;
+    padding: 15px;
+    border: 2px solid transparent;;
+}
+ 
+.boton {
+	width: 100px;
+	height: 40px;
+	font-size: 1em;
+	font-weight: 600;
+	background: #ffffff;
+}
+
+.boton:hover {
+	width: 100px;
+	height: 40px;
+	background: #dfdfdf;
+	color: #555555;
+	transition: 0.2s;
+}
+
+.intereses {
+	flex-flow: row wrap;
+	gap: 30px;
+}
+
+.subtitulo-intereses {
+	color: azure;
+	font-size: 1.125em;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	padding-top: 30px;
+}
+
+.intereses input {
+	width: 20px;
+	align-items: center;
+}
+
+.checkbox {
+	font-size: 1.125em;
+	font-weight: 200;
+	display: flex;
+	gap: 5px;
+	padding-top: 5px;
+}
+
+.botones-form {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+h5 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+    font-size: 36px;
+    width: 390px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 600px;
+    border-style: solid;
+    margin: 21px;
+    user-select: none;
+}
+
+<!--revisar-->
+
+.estrelladivproyectos{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proyectos h4{
+    font-family:"DM Mono", monospace;
+    font-size: 40px;
+    color: #020202;
+    padding: 20px;
+}
+.proyectos p{
+    font-family:"DM Mono", monospace;
+    font-size: 20px;
+    color: #00000095;
+    padding: 20px;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.g-proyectos img, .g-proyectos-picoteo img{
+    border-radius: 40px;
+    margin: 20px 12px;
+    border: 1px solid rgb(27, 27, 27);
+    box-shadow: 0 0 5px #00000069;
+    padding: 20px;
+}
+.g-proyectos img:hover {
+    transform: scale(1.1);
+}
+.g-proyectos-picoteo img:hover{
+    transform: scale(1.1);
+}
+/* galeria */
+#galeria, #galeriapicoteo{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #00000051;
+}
+/*galeria oculta*/
+#galeria-oculta, #galeria-ocultapicoteo {
+    width: 60%;
+    max-width: 1200px;
+    overflow: hidden;
+    z-index: 20;
+}
+.fraccion-galeria, .fraccion-galeria-picoteo{
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    justify-content: space-around;
+}
+.fraccion-galeria img, .fraccion-galeria-picoteo img {
+    transition: filter 0.4s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+.fraccion-galeria a:first-child {
+    margin-right: 420px;/*margen de flecha*/
+}
+.fraccion-galeria a:last-child {
+    margin-left: 420px;/*margen de flecha*/
+}
+.fraccion-galeria-picoteo a:first-child {
+    margin-right: 420px;/*margen de flecha*/
+}
+.fraccion-galeria-picoteo a:last-child {
+    margin-left: 420px;/*margen de flecha*/
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+/* imágenes galeria oculta */
+#foto-1 {
+    background-image: url("img/mockupbarroalfareria_atamaño.png");
+}
+#foto-2 {
+    background-image: url("img/mockuptaller_atamaño.png");
+}
+#foto-3 {
+    background-image: url("img/mockuptotebag_atamaño.png");
+}
+#foto-4 {
+    background-image: url("img/mockupafiche_atamaño.png");
+}
+#foto-5 {
+    background-image: url("img/postalmockup2_atamaño.png"); 
+}
+#foto-6 {
+    background-image: url("img/mockupbuzo_atamaño.png");
 }
